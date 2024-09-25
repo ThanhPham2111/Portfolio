@@ -1,0 +1,753 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+ .navbar{
+    background-color: white ;
+ }
+ .nav-link{
+    color: black ;
+    font-size: 1rem ;
+    font-weight: 700 ;
+    cursor: pointer;
+    text-decoration: none ;
+
+ }
+ .nav-link:hover{
+    color: white ;
+    background-color: black;
+    transition:0.75s;
+ }
+ .navbar-brand{
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+ }
+ .navbar-brand:hover{
+    color: white ;
+    background-color:rgb(228, 9, 75);
+    transition:0.75s;
+    border-radius: 5px;
+    padding: 5px;
+ }
+
+ /* main */
+.main{
+    background: url(/imgs/Backround.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 95vh;
+
+}
+
+.main h3{
+    font-size: 4.4rem;
+    font-weight: 700;
+}
+.main h6{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    line-height: 1;
+    width: 55%;
+
+}
+.main h6:hover{
+    color: #e94320;
+    transition: 0.4s;
+}
+.main .bt1{
+    height: 55px;
+    width: 138px;
+    background-color: #e94320;
+    color: white;
+    outline: none;
+    border: 1px solid #ff2d01;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.main .bt1:hover{
+    background-color: #ff5f03;
+    transition: 0.25s;
+}
+
+/* ABOUT */
+
+.about{
+    background: url(/imgs/Backround2.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+
+}
+
+.about img{
+    box-shadow: 9px 10px 8px 1px rgba(0,0,0,0.84);
+-webkit-box-shadow: 9px 10px 8px 1px rgba(0,0,0,0.84);
+-moz-box-shadow: 9px 10px 8px 1px rgba(0,0,0,0.84);
+}
+h1{
+    font-style: 3rem;
+    font-weight: 900;
+}
+.progress{
+    background-color: rgb(223, 219, 219);
+    justify-content: flex-start;
+    border-radius: 50px;
+    align-items: center;
+    position: relative;
+    display: flex;
+    height: 25px;
+    width: 100%;
+    box-shadow: 9px 10px 8px 1px rgba(0,0,0,0.84);
+-webkit-box-shadow: 9px 10px 8px 1px rgba(0,0,0,0.84);
+-moz-box-shadow: 9px 10px 8px 1px rgba(0,0,0,0.84);
+}
+.pro-value1{
+    animation: load1 3s normal forwards;
+    border-radius: 50px;
+    background-color: black;
+    height: 25px;
+    width: 0;
+
+}
+.pro-value2{
+    animation: load2 3s normal forwards;
+    border-radius: 50px;
+    background-color: black;
+    height: 25px;
+    width: 0;
+
+}
+.pro-value3{
+    animation: load3 3s normal forwards;
+    border-radius: 50px;
+    background-color: black;
+    height: 25px;
+    width: 0;
+
+}
+.pro-value4{
+    animation: load4 3s normal forwards;
+    border-radius: 50px;
+    background-color: black;
+    height: 25px;
+    width: 0;
+
+}
+.progress p{
+    color: white;
+    padding: 12px;
+
+
+}
+@keyframes load1{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 70%;
+    }
+}
+@keyframes load2{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 50%;
+    }
+}
+@keyframes load3{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 75%;
+    }
+}
+@keyframes load4{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 10%;
+    }
+}
+.btn1{
+    height: 40px;
+    width: 145px;
+    outline: none;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+}
+.btn1:hover{
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+    transition: 0.5s;
+}
+
+/* SELECTION */
+
+.card{
+    border: none;
+    outline: none;
+   
+
+}
+.card p{
+    color: gray;
+
+}
+.circle{
+    height: 70px;
+    width: 70px;
+    background-color: lightgray;
+    color: black;
+    padding: 12px;
+    font-size: 30px;
+    display: inline-block;
+    margin-bottom: 20px;
+    border-radius: 50%;
+}
+.card:hover{
+    /* background-color: black; */
+    /* color: white; */
+    transition: 0.8s;
+    box-shadow: 8px 7px 20px -6px rgba(150, 148, 148, 0.97);
+    -webkit-box-shadow: 8px 7px 20px -6px rgba(202, 202, 202, 0.97);
+    -moz-box-shadow: 8px 7px 20px -6px rgba(211, 211, 211, 0.97);
+}
+
+.services h1 {
+    opacity: 1; /* Khởi đầu ở trạng thái mờ */
+    transform: translateY(20px); /* Đặt vị trí ban đầu bên dưới */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Thời gian và hiệu ứng chuyển tiếp */
+}
+
+.services h1:hover {
+    opacity: 1; /* Hiện ra khi hover */
+    transform: translateY(0); /* Trở về vị trí ban đầu */
+}
+.services{
+    background-image: url(/imgs/Backround2.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    
+} 
+
+/* PORTFOLIO */
+
+.control ul li{
+    list-style: none;
+    background-color: black;
+    padding: 5px 15px;
+    color: white;
+    display: inline-block;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+.item{
+    position: relative;
+    width: 225px;
+    height: 225px;
+}
+.item span{
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    font-size: 40px;
+    color: black;
+    cursor: pointer;
+    opacity: 0;
+}
+.item:hover{
+
+    transition: 0.5s;
+    box-shadow: 8px 7px 20px -6px rgba(31, 31, 31, 0.97);
+    -webkit-box-shadow: 8px 7px 20px -6px rgba(22, 22, 22, 0.97);
+    -moz-box-shadow: 8px 7px 20px -6px rgba(44, 44, 44, 0.97);
+}
+.item {
+    padding: 0; /* Xóa padding nếu có */
+    margin: 0; /* Xóa margin nếu có */
+    position: relative; /* Giữ vị trí tương đối để các phần tử con không bị di chuyển */
+    display: block; /* Đảm bảo container không tạo khoảng trắng do display */
+    overflow: hidden; /* Đảm bảo không có khoảng trắng bên ngoài container */
+}
+
+.item img {
+    width: 100%; /* Ảnh sẽ chiếm toàn bộ chiều rộng container */
+    height: 100%; /* Đảm bảo chiều cao cũng khớp với container */
+    object-fit: cover; /* Giữ nguyên tỷ lệ của ảnh mà vẫn vừa container */
+    display: block; /* Tránh khoảng trắng từ inline-block */
+    transition: transform 0.3s ease; /* Thêm hiệu ứng chuyển động khi hover nếu cần */
+}
+
+.item:hover img {
+    transform: scale(1.1); /* Khi hover, phóng to ảnh một chút */
+}
+
+
+.item:hover span{
+    opacity: 1;
+    transition: 0.5s;
+}
+.row{
+    margin-left: 43px;
+}
+.column{
+    max-width: 24.333333%;
+}
+.portfolio h1 {
+    opacity: 1; /* Khởi đầu ở trạng thái mờ */
+    transform: translateY(20px); /* Đặt vị trí ban đầu bên dưới */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Thời gian và hiệu ứng chuyển tiếp */
+}
+
+.portfolio h1:hover {
+    opacity: 1; /* Hiện ra khi hover */
+    transform: translateY(0); /* Trở về vị trí ban đầu */
+}
+
+ .portfolio{
+    background-image: url(/imgs/Backround.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 125%;
+ }
+ .button {
+    opacity: 1; /* Khởi đầu ở trạng thái mờ */
+    transform: translateY(20px); /* Đặt vị trí ban đầu bên dưới */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Thời gian và hiệu ứng chuyển tiếp */
+}
+
+.button:hover {
+    opacity: 1; /* Hiện ra khi hover */
+    transform: translateY(0); /* Trở về vị trí ban đầu */
+}
+/* CONTACT */   
+.contact .circle span{
+    margin-left: 5px;
+}
+.circle:hover{
+    background-color: black;
+    color: white !important;
+}
+.contact .circle {
+    opacity: 1; /* Khởi đầu ở trạng thái mờ */
+    transform: translateY(20px); /* Đặt vị trí ban đầu bên dưới */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Thời gian và hiệu ứng chuyển tiếp */
+}
+
+.contact .circle:hover {
+    opacity: 1; /* Hiện ra khi hover */
+    transform: translateY(0); /* Trở về vị trí ban đầu */
+}
+.contact{
+    background-image: url(/imgs/Backround.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+ }
+ .contact .circle span{
+    margin-right: 5px;
+ }
+ .contact .row{
+    margin-left: -12px;
+ }
+ .contact p{
+    font-weight: 500;
+ }
+ .contact h1 {
+    opacity: 1; /* Khởi đầu ở trạng thái mờ */
+    transform: translateY(20px); /* Đặt vị trí ban đầu bên dưới */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Thời gian và hiệu ứng chuyển tiếp */
+}
+
+.contact h1:hover {
+    opacity: 1; /* Hiện ra khi hover */
+    transform: translateY(0); /* Trở về vị trí ban đầu */
+}
+.navbar {
+    background-color: white ;
+ }
+
+
+ .nav-link{
+    color: black ;
+    font-size: 1rem ;
+    font-weight: 700 ;
+    cursor: pointer;
+    text-decoration: none ;
+
+ }
+ .nav-link:hover{
+    color: white ;
+    background-color: black;
+    transition:0.75s;
+ }
+ .navbar-brand{
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+ }
+ .navbar-brand:hover{
+    color: white ;
+    background-color:rgb(228, 9, 75);
+    transition:0.75s;
+    border-radius: 5px;
+    padding: 5px;
+ }
+
+ /* main */
+.main{
+    background: url(/imgs/Backround.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 95vh;
+
+}
+
+.main h3{
+    font-size: 4.4rem;
+    font-weight: 700;
+}
+.main h6{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    line-height: 1;
+    width: 55%;
+
+}
+.main h6:hover{
+    color: #e94320;
+    transition: 0.4s;
+}
+.main .bt1{
+    height: 55px;
+    width: 138px;
+    background-color: #e94320;
+    color: white;
+    outline: none;
+    border: 1px solid #ff2d01;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.main .bt1:hover{
+    background-color: #ff5f03;
+    transition: 0.25s;
+}
+
+/* ABOUT */
+
+.about{
+    background: url(/imgs/Backround2.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+
+}
+
+.about img{
+    box-shadow: 9px 10px 8px 1px rgba(0,0,0,0.84);
+-webkit-box-shadow: 9px 10px 8px 1px rgba(0,0,0,0.84);
+-moz-box-shadow: 9px 10px 8px 1px rgba(0,0,0,0.84);
+}
+h1{
+    font-style: 3rem;
+    font-weight: 900;
+}
+.progress{
+    background-color: rgb(223, 219, 219);
+    justify-content: flex-start;
+    border-radius: 50px;
+    align-items: center;
+    position: relative;
+    display: flex;
+    height: 25px;
+    width: 100%;
+    box-shadow: 9px 10px 8px 1px rgba(0,0,0,0.84);
+-webkit-box-shadow: 9px 10px 8px 1px rgba(0,0,0,0.84);
+-moz-box-shadow: 9px 10px 8px 1px rgba(0,0,0,0.84);
+}
+.pro-value1{
+    animation: load1 3s normal forwards;
+    border-radius: 50px;
+    background-color: black;
+    height: 25px;
+    width: 0;
+
+}
+.pro-value2{
+    animation: load2 3s normal forwards;
+    border-radius: 50px;
+    background-color: black;
+    height: 25px;
+    width: 0;
+
+}
+.pro-value3{
+    animation: load3 3s normal forwards;
+    border-radius: 50px;
+    background-color: black;
+    height: 25px;
+    width: 0;
+
+}
+.pro-value4{
+    animation: load4 3s normal forwards;
+    border-radius: 50px;
+    background-color: black;
+    height: 25px;
+    width: 0;
+
+}
+.progress p{
+    color: white;
+    padding: 12px;
+
+
+}
+@keyframes load1{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 70%;
+    }
+}
+@keyframes load2{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 50%;
+    }
+}
+@keyframes load3{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 75%;
+    }
+}
+@keyframes load4{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 10%;
+    }
+}
+.btn1{
+    height: 40px;
+    width: 145px;
+    outline: none;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+}
+.btn1:hover{
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+    transition: 0.5s;
+}
+
+/* SELECTION */
+
+.card{
+    border: none;
+    outline: none;
+   
+
+}
+.card p{
+    color: gray;
+
+}
+.circle{
+    height: 70px;
+    width: 70px;
+    background-color: lightgray;
+    color: black;
+    padding: 12px;
+    font-size: 30px;
+    display: inline-block;
+    margin-bottom: 20px;
+    border-radius: 50%;
+}
+.card:hover{
+    /* background-color: black; */
+    /* color: white; */
+    transition: 0.8s;
+    box-shadow: 8px 7px 20px -6px rgba(150, 148, 148, 0.97);
+    -webkit-box-shadow: 8px 7px 20px -6px rgba(202, 202, 202, 0.97);
+    -moz-box-shadow: 8px 7px 20px -6px rgba(211, 211, 211, 0.97);
+}
+
+.services h1 {
+    opacity: 1; /* Khởi đầu ở trạng thái mờ */
+    transform: translateY(20px); /* Đặt vị trí ban đầu bên dưới */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Thời gian và hiệu ứng chuyển tiếp */
+}
+
+.services h1:hover {
+    opacity: 1; /* Hiện ra khi hover */
+    transform: translateY(0); /* Trở về vị trí ban đầu */
+}
+.services{
+    background-image: url(/imgs/Backround2.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    
+} 
+
+/* PORTFOLIO */
+
+.control ul li{
+    list-style: none;
+    background-color: black;
+    padding: 5px 15px;
+    color: white;
+    display: inline-block;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+.item{
+    position: relative;
+    width: 225px;
+    height: 225px;
+}
+.item span{
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    font-size: 40px;
+    color: black;
+    cursor: pointer;
+    opacity: 0;
+}
+.item:hover{
+
+    transition: 0.5s;
+    box-shadow: 8px 7px 20px -6px rgba(31, 31, 31, 0.97);
+    -webkit-box-shadow: 8px 7px 20px -6px rgba(22, 22, 22, 0.97);
+    -moz-box-shadow: 8px 7px 20px -6px rgba(44, 44, 44, 0.97);
+}
+.item {
+    padding: 0; /* Xóa padding nếu có */
+    margin: 0; /* Xóa margin nếu có */
+    position: relative; /* Giữ vị trí tương đối để các phần tử con không bị di chuyển */
+    display: block; /* Đảm bảo container không tạo khoảng trắng do display */
+    overflow: hidden; /* Đảm bảo không có khoảng trắng bên ngoài container */
+}
+
+.item img {
+    width: 100%; /* Ảnh sẽ chiếm toàn bộ chiều rộng container */
+    height: 100%; /* Đảm bảo chiều cao cũng khớp với container */
+    object-fit: cover; /* Giữ nguyên tỷ lệ của ảnh mà vẫn vừa container */
+    display: block; /* Tránh khoảng trắng từ inline-block */
+    transition: transform 0.3s ease; /* Thêm hiệu ứng chuyển động khi hover nếu cần */
+}
+
+.item:hover img {
+    transform: scale(1.1); /* Khi hover, phóng to ảnh một chút */
+}
+
+
+.item:hover span{
+    opacity: 1;
+    transition: 0.5s;
+}
+.row{
+    margin-left: 43px;
+}
+.column{
+    max-width: 24.333333%;
+}
+.portfolio h1 {
+    opacity: 1; /* Khởi đầu ở trạng thái mờ */
+    transform: translateY(20px); /* Đặt vị trí ban đầu bên dưới */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Thời gian và hiệu ứng chuyển tiếp */
+}
+
+.portfolio h1:hover {
+    opacity: 1; /* Hiện ra khi hover */
+    transform: translateY(0); /* Trở về vị trí ban đầu */
+}
+
+ .portfolio{
+    background-image: url(/imgs/Backround.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 125%;
+ }
+ .button {
+    opacity: 1; /* Khởi đầu ở trạng thái mờ */
+    transform: translateY(20px); /* Đặt vị trí ban đầu bên dưới */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Thời gian và hiệu ứng chuyển tiếp */
+}
+
+.button:hover {
+    opacity: 1; /* Hiện ra khi hover */
+    transform: translateY(0); /* Trở về vị trí ban đầu */
+}
+/* CONTACT */   
+.contact .circle span{
+    margin-left: 5px;
+}
+.circle:hover{
+    background-color: black;
+    color: white !important;
+}
+.contact .circle {
+    opacity: 1; /* Khởi đầu ở trạng thái mờ */
+    transform: translateY(20px); /* Đặt vị trí ban đầu bên dưới */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Thời gian và hiệu ứng chuyển tiếp */
+}
+
+.contact .circle:hover {
+    opacity: 1; /* Hiện ra khi hover */
+    transform: translateY(0); /* Trở về vị trí ban đầu */
+}
+.contact{
+    background-image: url(/imgs/Backround.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+ }
+ .contact .circle span{
+    margin-right: 5px;
+ }
+ .contact .row{
+    margin-left: -12px;
+ }
+ .contact p{
+    font-weight: 500;
+ }
+ .contact h1 {
+    opacity: 1; /* Khởi đầu ở trạng thái mờ */
+    transform: translateY(20px); /* Đặt vị trí ban đầu bên dưới */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Thời gian và hiệu ứng chuyển tiếp */
+}
+
+.contact h1:hover {
+    opacity: 1; /* Hiện ra khi hover */
+    transform: translateY(0); /* Trở về vị trí ban đầu */
+}
+
+
